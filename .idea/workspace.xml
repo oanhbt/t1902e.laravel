@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c19ff8ef-17fc-4250-b5e6-9b3dc14d873c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/.env.example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/.styleci.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/app/Console/Kernel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/app/Exceptions/Handler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/app/Http/Controllers/Auth/ConfirmPasswordController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/app/Http/Controllers/Auth/ForgotPasswordController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/app/Http/Controllers/Auth/ResetPasswordController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/app/Http/Controllers/Auth/VerificationController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/app/Http/Controllers/Controller.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/app/Http/Kernel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/app/Http/Middleware/Authenticate.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/app/Http/Middleware/CheckForMaintenanceMode.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/app/Http/Middleware/EncryptCookies.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/app/Http/Middleware/RedirectIfAuthenticated.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/app/Http/Middleware/TrimStrings.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/app/Http/Middleware/TrustProxies.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/app/Http/Middleware/VerifyCsrfToken.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/app/Providers/AuthServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/app/Providers/BroadcastServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/app/Providers/EventServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/app/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/app/User.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/artisan" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/bootstrap/app.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/bootstrap/cache/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/composer.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/config/app.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/config/auth.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/config/broadcasting.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/config/cache.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/config/database.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/config/filesystems.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/config/hashing.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/config/logging.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/config/mail.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/config/queue.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/config/services.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/config/session.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/config/view.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/database/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/database/factories/UserFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/database/migrations/2014_10_12_100000_create_password_resets_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/database/migrations/2019_08_19_000000_create_failed_jobs_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/phpunit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/public/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/public/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/public/web.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/resources/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/resources/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/resources/lang/en/auth.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/resources/lang/en/pagination.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/resources/lang/en/passwords.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/resources/lang/en/validation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/resources/sass/app.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/resources/views/welcome.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/routes/api.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/routes/channels.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/routes/console.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/routes/web.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/server.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/storage/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/storage/app/public/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/storage/framework/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/storage/framework/cache/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/storage/framework/cache/data/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/storage/framework/sessions/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/storage/framework/testing/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/storage/framework/views/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/storage/logs/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/tests/CreatesApplication.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/tests/Feature/ExampleTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/tests/TestCase.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/tests/Unit/ExampleTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thangtt/blog/webpack.mix.js" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1VNpKS1j4lqG6UTWwi4HKJpYFm1" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c19ff8ef-17fc-4250-b5e6-9b3dc14d873c" name="Default Changelist" comment="" />
+      <created>1577103344664</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1577103344664</updated>
+      <workItem from="1577103354403" duration="3000" />
+    </task>
+    <servers />
+  </component>
+</project>
