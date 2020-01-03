@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="utf-8">
@@ -33,7 +33,15 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-
+                      <li class="nav-item">
+                          <a class="nav-link" href="category">Category Manager</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">Post Manager</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">Comment Manager</a>
+                      </li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -73,6 +81,14 @@
         </nav>
 
         <main class="py-4">
+          @foreach(['danger', 'warning', 'success', 'info'] as $msg)
+            @if(session($msg))
+              <div class="alert alert-{{$msg}}">
+                {{session($msg)}}
+              </div>
+            @endif
+          @endforeach
+          
             @yield('content')
         </main>
     </div>
