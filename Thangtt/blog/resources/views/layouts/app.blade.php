@@ -33,15 +33,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-                      <li class="nav-item">
-                        <a href="category" class="nav-link">Category Manager</a>
-                      </li>
-                      <li class="nav-item">
-                        <a href="#" class="nav-link">Post Manager</a>
-                      </li>
-                      <li class="nav-item">
-                        <a href="#" class="nav-link">Comment Manager</a>
-                      </li>
+
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -81,14 +73,6 @@
         </nav>
 
         <main class="py-4">
-            @foreach(['dange', 'warning', 'success', 'info'] as $msg)
-              @if(session($msg))
-              <div class="alert alert-{{$msg}}">
-                {{session($msg)}}
-              </div>
-              @endif
-            @endforeach
-
             @yield('content')
         </main>
     </div>
