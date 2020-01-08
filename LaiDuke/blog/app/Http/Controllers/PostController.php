@@ -13,11 +13,18 @@ class PostController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-      $lsPosts = Post::all();
+        $searchTitle = $request->search;
+        if(isset($searchTitle)){
+            $lsPosts = Post::where('title', 'like', "%$searchTitle%")->paginate(10);
+        }
+        else{
+            $lsPosts = Post::paginate(10);
+        }
+
       return view('admin.post.list') -> with([
-        'lsPosts' => $lsPosts
+        'lsPosts' => $lsPosts, 'searchTitle' => $searchTitle
       ]);
     }
 
@@ -112,8 +119,11 @@ class PostController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy($id, Request $request)
     {
-        //
+        $post = Category::find($id);
+        $post->delete();
+        $request->session()->flash('success', ' delete!');
+        return redirect()->route("post.index");
     }
 }

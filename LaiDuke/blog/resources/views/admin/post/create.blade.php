@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+<script src="https://cdn.ckeditor.com/4.13.1/standard/ckeditor.js"></script>
 @section('content')
 <div class="container">
   <h2>Add new category</h2>
@@ -26,8 +26,14 @@
       <label for="usr">Content</label>
       <br>
       <textarea name="content" rows="8" cols="150"  required="true"></textarea>
+
     </div>
     <input type="submit" value="Add" />
   </form>
 </div>
+<script>
+    CKEDITOR.replace( 'content',{filebrowserUploadUrl: "{{route('upload', ['_token' => csrf_token() ])}}",
+        filebrowserUploadMethod: 'form'} );
+
+</script>
 @endsection

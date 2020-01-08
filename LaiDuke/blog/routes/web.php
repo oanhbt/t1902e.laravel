@@ -11,15 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
+Route::get('/', 'HomePageController@welcome');
 Auth::routes();
-
 Route::get('/home', 'HomeController@index')->name('home');
-
-// admin
-//Route::get("list_category", "CategoryController@index");
+Route::get('/blog', 'HomePageController@blog');
+Route::get('/post/detail', 'HomePageController@post');
 Route::resource('category', 'CategoryController');
 Route::resource('post', 'PostController');
+Route::post('ckeditor/image_upload', 'CKEditorController@upload')->name('upload');

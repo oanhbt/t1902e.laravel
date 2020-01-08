@@ -27,16 +27,31 @@
   <!-- Tweaks for older IEs--><!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+
 </head>
 <section class="latest-posts">
   <div class="container">
+      <form action="{{route('post.index')}}">
+          @csrf
+          <label for="search">Searching by Title</label>
+              <input class="form-control my-0 py-1 amber-border" name="search" type="text" placeholder="{{$searchTitle}}" aria-label="Search">
+
+          <select class="mdb-select md-form colorful-select dropdown-primary" searchable="Search here..">
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+              <option value="3">Option 3</option>
+              <option value="4">Option 4</option>
+              <option value="5">Option 5</option>
+          </select>
+          <input type="submit" value="Search" class="btn btn-primary">
+      </form>
     <header>
       <h2>Latest from the blog</h2>
       <p class="text-big">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
       <a class="btn btn-primary" href="post/create">Add</a>
     </header>
     <div class="row">
-      <?php foreach ($lsPosts as $post): ?>
+      @foreach ($lsPosts as $post)
         <div class="post col-md-4">
           <div class="post-thumbnail"><a href="post.html"><img src="{{$post->cover}}" alt="..." class="img-fluid"></a></div>
           <div class="post-details">
@@ -45,11 +60,12 @@
               <div class="category"><a href="#">{{$post->category}}</a></div>
             </div><a href="post.html">
               <h3 class="h4">{{$post->title}}</h3></a>
-            <p class="text-muted">{{$post->content}}</p>
+            <p class="text-muted"> <?php echo($post->content) ?></p>
           </div>
         </div>
-      <?php endforeach; ?>
+      @endforeach
     </div>
+      {{$lsPosts->links()}}
   </div>
 </section>
 
