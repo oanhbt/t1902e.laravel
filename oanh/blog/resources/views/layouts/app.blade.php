@@ -10,7 +10,9 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ asset('js/app.js') }}" ></script>
+    <script src="{{ asset('js/notify.min.js') }}" ></script>
+
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -32,16 +34,18 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
+                    @auth
                     <ul class="navbar-nav mr-auto">
                       <li class="nav-item">
                           <a class="nav-link" href="category">Category Manager</a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link" href="#">Post Manager</a>
+                          <a class="nav-link" href="post">Post Manager</a>
                       </li>
                       <li class="nav-item">
                           <a class="nav-link" href="#">Comment Manager</a>
                       </li>
+                      @endauth
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -88,7 +92,15 @@
               </div>
             @endif
           @endforeach
-          
+
+          @if(count($errors) > 0)
+          <div class="alert alert-danger">
+            @foreach($errors->all() as $er)
+              <p>{{$er}}</p>
+            @endforeach
+          </div>
+          @endif
+
             @yield('content')
         </main>
     </div>

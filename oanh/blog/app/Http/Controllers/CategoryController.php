@@ -14,7 +14,10 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        return view('admin.category.list');
+      $lsCategoires = Category::all();
+        return view('admin.category.list')->with([
+          'lsCategoires' => $lsCategoires
+        ]   );
     }
 
     /**
@@ -65,7 +68,9 @@ class CategoryController extends Controller
      */
     public function edit($id)
     {
-        //
+      $cate = Category::find($id);
+        return view('admin.category.update')->with(
+          ['cate' => $cate]);
     }
 
     /**
@@ -77,7 +82,11 @@ class CategoryController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+      $cate = Category::find($id);
+      $cate->name = $request->input('name');
+      $cate->save();
+      $request->session()->flash('success', 'Category was updated!');
+      return redirect()->route("category.index");
     }
 
     /**
@@ -86,8 +95,11 @@ class CategoryController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy($id, Request $request)
     {
-        //
+        $cate = Category::find($id);
+        $cate->delete();
+        $request->session()->flash('success', 'Category was deleted!');
+        return redirect()->route("category.index");
     }
 }

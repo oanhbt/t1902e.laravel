@@ -20,8 +20,12 @@ class CreatePostsTable extends Migration
             $table->string('title');
             $table->text('content');
             $table->bigInteger('user_id');
+            $table->bigInteger('category_id');
+
             $table->integer('count_view');
             $table->integer('count_like');
+            
+            $table->softDeletes();
 
             $table->timestamps();
         });

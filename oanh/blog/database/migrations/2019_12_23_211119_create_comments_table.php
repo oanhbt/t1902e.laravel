@@ -20,6 +20,8 @@ class CreateCommentsTable extends Migration
             $table->string('content');
             $table->bigInteger('post_id');
 
+            $table->softDeletes();
+
             $table->timestamps();
         });
     }
